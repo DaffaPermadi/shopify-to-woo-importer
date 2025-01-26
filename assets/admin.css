@@ -1,0 +1,113 @@
+/* Admin styles for Shopify to WooCommerce Importer */
+.stwi-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stwi-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.stwi-header h1 {
+    margin-bottom: 10px;
+    color: #23282d;
+}
+
+.stwi-dropzone {
+    border: 2px dashed #b4b9be;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.stwi-dropzone.dz-drag-hover {
+    border-color: #0073aa;
+    background: #f1f1f1;
+}
+
+.stwi-dropzone .dz-message {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+}
+
+.stwi-progress {
+    background: #f1f1f1;
+    height: 30px;
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+    display: none;
+}
+
+.stwi-progress-bar {
+    height: 100%;
+    background: #0073aa;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.stwi-status {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #46b450;
+    background: #f7f7f7;
+}
+
+.stwi-error {
+    border-left-color: #dc3232;
+}
+
+.stwi-warning {
+    border-left-color: #ffb900;
+}
+
+.stwi-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.stwi-stat-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.stwi-stat-box h3 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+}
+
+.stwi-log-viewer {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: monospace;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .stwi-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .stwi-dropzone {
+        padding: 20px;
+    }
+}
