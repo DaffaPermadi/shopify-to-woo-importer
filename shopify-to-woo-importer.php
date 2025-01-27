@@ -1,9 +1,10 @@
 <?php
 /**
  * Plugin Name: Shopify to WooCommerce Importer
- * Description: Safely import Shopify products to WooCommerce with image handling
+ * Description: Safely import Shopify products to WooCommerce with image handling and Back Process
  * Version: 1.0.0
  * Author: Daffa Permadi
+ * Author URI: https://github.com/daffapermadi
  * Text Domain: shopify-to-woo-importer
  * Requires at least: 5.8
  * Requires PHP: 7.4
@@ -34,6 +35,7 @@ if (!defined('WP_DEBUG_LOG')) {
 require_once STWI_PLUGIN_DIR . 'includes/class-product-processor.php';
 require_once STWI_PLUGIN_DIR . 'includes/class-importer.php';
 require_once STWI_PLUGIN_DIR . 'includes/class-admin.php';
+require_once( plugin_dir_path( __FILE__ ) . '/libraries/action-scheduler/action-scheduler.php' );
 
 
 // Ensure WooCommerce is active

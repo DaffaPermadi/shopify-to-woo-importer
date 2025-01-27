@@ -20,8 +20,6 @@ class ProductProcessor {
         ));
     }
     
-    
-    
     // Add memory management
     private function check_memory() {
         $memory_limit = ini_get('memory_limit');

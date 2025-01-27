@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
     const dropzone = new Dropzone("#stwi-upload-form", {
         url: stwi_params.ajax_url,
         paramName: "file",
-        maxFilesize: 14,
+        maxFilesize: 14, // Dalam MB
         acceptedFiles: ".csv",
         autoProcessQueue: true, // Ubah ke true
         dictDefaultMessage: stwi_params.strings.dropzone_message,
